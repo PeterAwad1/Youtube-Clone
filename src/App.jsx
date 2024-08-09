@@ -6,9 +6,13 @@ import SideMenu from "./components/sidemenu/SideMenu";
 function App() {
   return (
     <div>
-      <Navbar />
-      <SideMenu />
-      <MainSection />
+      <div className="flex flex-col justify-start">
+        <Navbar />
+        <div className="flex">
+          <SideMenu />
+          <MainSection />
+        </div>
+      </div>
     </div>
   );
 }
