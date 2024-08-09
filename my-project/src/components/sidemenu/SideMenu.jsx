@@ -3,4 +3,3 @@ function SideMenu() {
 }
 
 export default SideMenu;
-SideMenu;
