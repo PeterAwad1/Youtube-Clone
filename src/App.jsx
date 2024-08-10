@@ -16,7 +16,7 @@ function App() {
           <div className="bg-gray-950">
             <SideMenu open={openMenu} />
           </div>
-          <div className="w-full pl-5 py-5">
+          <div className="w-full p-5">
             <MainSection />
           </div>
         </div>
