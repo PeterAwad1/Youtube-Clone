@@ -4,7 +4,7 @@ const video = [
   {
     thubmail: "./../../../public/thubmail.jpg",
     time: "30:23",
-    name: "London",
+    name: "London Is Most Amazing City ",
     channel: "Englend",
     views: "234k",
     history: "1 year ago",
@@ -13,7 +13,7 @@ const video = [
   {
     thubmail: "./../../../public/thubmail.jpg",
     time: "30:23",
-    name: "London",
+    name: "London Is Most Amazing City",
     channel: "Englend",
     views: "234k",
     history: "1 year ago",
@@ -22,7 +22,7 @@ const video = [
   {
     thubmail: "./../../../public/thubmail.jpg",
     time: "30:23",
-    name: "Landan",
+    name: "London Is Most Amazing City",
     channel: "Englend",
     views: "234k",
     history: "1 year ago",
@@ -31,7 +31,7 @@ const video = [
   {
     thubmail: "./../../../public/thubmail.jpg",
     time: "30:23",
-    name: "Landan",
+    name: "London Is Most Amazing City",
     channel: "Englend",
     views: "234k",
     history: "1 year ago",
@@ -40,7 +40,7 @@ const video = [
   {
     thubmail: "./../../../public/thubmail.jpg",
     time: "30:23",
-    name: "Landan",
+    name: "London Is Most Amazing City",
     channel: "Englend",
     views: "234k",
     history: "1 year ago",
@@ -49,7 +49,7 @@ const video = [
   {
     thubmail: "./../../../public/thubmail.jpg",
     time: "30:23",
-    name: "Landan",
+    name: "London Is Most Amazing City",
     channel: "Englend",
     views: "234k",
     history: "1 year ago",
@@ -58,7 +58,7 @@ const video = [
   {
     thubmail: "./../../../public/thubmail.jpg",
     time: "30:23",
-    name: "Landan",
+    name: "London Is Most Amazing City",
     channel: "Englend",
     views: "234k",
     history: "1 year ago",

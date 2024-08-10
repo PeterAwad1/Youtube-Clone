@@ -21,7 +21,7 @@ function VideoDetails({ data }) {
           <p className="text-xl">{data.name}</p>
           <span className="text-xs text-gray-300">{data.channel}</span>
           <div className="flex items-center gap-2">
-            <p>{data.views}</p>
+            <p>{data.views} views</p>
             <p className="font-bold">&bull;</p>
             <p>{data.history}</p>
           </div>
