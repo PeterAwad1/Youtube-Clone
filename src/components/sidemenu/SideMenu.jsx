@@ -8,25 +8,26 @@ import { BiSolidJoystick } from "react-icons/bi";
 import { MdOutlineSportsSoccer } from "react-icons/md";
 import { FaRegNewspaper } from "react-icons/fa6";
 import { MdLiveTv } from "react-icons/md";
+import SideLink from "./SideLink";
 
 const MainMenu = [
   {
-    icon: "FaHome",
+    icon: <FaHome />,
     path: "/",
     name: "Home",
   },
   {
-    icon: "SiYoutubeshorts",
+    icon: <SiYoutubeshorts />,
     path: "/",
     name: "Shorts",
   },
   {
-    icon: "MdSubscriptions",
+    icon: <MdSubscriptions />,
     path: "/",
     name: "Subscriptions",
   },
   {
-    icon: "AiOutlineDownload",
+    icon: <AiOutlineDownload />,
     path: "/",
     name: "Download",
   },
@@ -89,8 +90,25 @@ const SideMenuData3 = [
     name: "Live",
   },
 ];
-function SideMenu() {
-  return <div></div>;
+function SideMenu({ open }) {
+  return (
+    <div>
+      <ul
+        className={`${
+          open ? "flex" : "hidden"
+        } flex-col items-center justify-center gap-10 px-2 sm:px-4 py-10 duration-300 `}
+      >
+        {MainMenu.map((data) => (
+          <SideLink
+            key={data.name}
+            name={data.name}
+            path={data.path}
+            icon={data.icon}
+          />
+        ))}
+      </ul>
+    </div>
+  );
 }
 
 export default SideMenu;
