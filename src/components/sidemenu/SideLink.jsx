@@ -3,7 +3,7 @@ function SideLink({ name, icon, path }) {
     <li className="text-white ">
       <a
         href={path}
-        className="flex flex-col text-xs sm:text-xl items-center justify-center gap-3"
+        className="flex flex-col text-xs sm:text-xl items-center justify-center gap-1"
       >
         {icon}
         <p className="text-xs sm:text-sm font-semibold">{name}</p>

@@ -12,11 +12,13 @@ function App() {
         <div>
           <Navbar setOpenMenu={setOpenMenu} openMenu={openMenu} />
         </div>
-        <div className="flex w-full h-[calc(100vh-50px)] ">
+        <div className="flex w-full justify-between h-[calc(100vh-50px)] ">
           <div className="bg-gray-950">
             <SideMenu open={openMenu} />
           </div>
-          <MainSection />
+          <div className="w-full pl-5 py-5">
+            <MainSection />
+          </div>
         </div>
       </div>
     </div>
