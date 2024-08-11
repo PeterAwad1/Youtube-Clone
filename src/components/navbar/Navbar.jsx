@@ -2,10 +2,10 @@ import Img from "./../../assets/youtube.png";
 import { IoMdMenu } from "react-icons/io";
 import { IoIosSearch } from "react-icons/io";
 import { FaUserCircle } from "react-icons/fa";
-
+import { Link } from "react-router-dom";
 function Navbar({ setOpenMenu, openMenu }) {
   return (
-    <div className="flex items-center w-full h-[50px] bg-gray-950 p-2 sm:px-4  justify-between">
+    <div className="flex items-center w-full h-[50px] bg-gray-900 p-2 sm:px-4  justify-between">
       {/* Log Section */}
       <div className="flex justify-between gap-5">
         {/* Menu Buttom */}
@@ -14,7 +14,7 @@ function Navbar({ setOpenMenu, openMenu }) {
           onClick={() => setOpenMenu(!openMenu)}
         />
         {/* Logo Img and label */}
-        <a href="/" className="flex items-center gap-1">
+        <Link to="/" className="flex items-center gap-1">
           <img
             id="Logo"
             src={Img}
@@ -22,7 +22,7 @@ function Navbar({ setOpenMenu, openMenu }) {
             alt="YouTube Logo"
           />
           <span className="text-white font-semibold">YouTube</span>
-        </a>
+        </Link>
       </div>
       {/* Search Field */}
       <form className="relative">
