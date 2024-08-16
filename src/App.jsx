@@ -12,8 +12,93 @@ import {
   BrowserRouter,
   Routes,
 } from "react-router-dom";
+
+const video = [
+  {
+    thubmail: "./../../../public/thubmail.jpg",
+    time: "30:23",
+    name: "London Is Most Amazing City ",
+    channel: "Englend",
+    views: "234k",
+    history: "1 year ago",
+    channelImage: "./../../../public/ChannelImage.jpg",
+    subscription: "305K subscribers",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque deleniti reiciendis dignissimos corporis delectus temporibus obcaecati praesentium omnis. Fugit omnis rem deleniti esse harum dicta nisi exercitationem porro enim dolores!",
+  },
+  {
+    thubmail: "./../../../public/thubmail.jpg",
+    time: "30:23",
+    name: "London Is Most Amazing City",
+    channel: "Englend",
+    views: "234k",
+    history: "1 year ago",
+    channelImage: "./../../../public/ChannelImage.jpg",
+    subscription: "305K subscribers",
+  },
+  {
+    thubmail: "./../../../public/thubmail.jpg",
+    time: "30:23",
+    name: "London Is Most Amazing City",
+    channel: "Englend",
+    views: "234k",
+    history: "1 year ago",
+    channelImage: "./../../../public/ChannelImage.jpg",
+    subscribtion: "305K subscribers",
+  },
+  {
+    thubmail: "./../../../public/thubmail.jpg",
+    time: "30:23",
+    name: "London Is Most Amazing City",
+    channel: "Englend",
+    views: "234k",
+    history: "1 year ago",
+    channelImage: "./../../../public/ChannelImage.jpg",
+    subscribtion: "305K subscribers",
+  },
+  {
+    thubmail: "./../../../public/thubmail.jpg",
+    time: "30:23",
+    name: "London Is Most Amazing City",
+    channel: "Englend",
+    views: "234k",
+    history: "1 year ago",
+    channelImage: "./../../../public/ChannelImage.jpg",
+    subscribtion: "305K subscribers",
+  },
+  {
+    thubmail: "./../../../public/thubmail.jpg",
+    time: "30:23",
+    name: "London Is Most Amazing City",
+    channel: "Englend",
+    views: "234k",
+    history: "1 year ago",
+    channelImage: "./../../../public/ChannelImage.jpg",
+    subscribtion: "305K subscribers",
+  },
+  {
+    thubmail: "./../../../public/thubmail.jpg",
+    time: "30:23",
+    name: "London Is Most Amazing City",
+    channel: "Englend",
+    views: "234k",
+    history: "1 year ago",
+    channelImage: "./../../../public/ChannelImage.jpg",
+    subscribtion: "305K subscribers",
+  },
+  {
+    thubmail: "./../../../public/thubmail.jpg",
+    time: "30:23",
+    name: "Landan",
+    channel: "Englend",
+    views: "234k",
+    history: "1 year ago",
+    channelImage: "./../../../public/ChannelImage.jpg",
+    subscribtion: "305K subscribers",
+  },
+];
 function App() {
-  const [openMenu, setOpenMenu] = useState(false);
+  const [openMenu, setOpenMenu] = useState(true);
 
   return (
     <div className="bg-black">
@@ -27,16 +112,14 @@ function App() {
               <SideMenu open={openMenu} />
             </div>
             <div className="w-full p-5">
-              <MainSection>
-                <Routes>
-                  <Route path="/">
-                    <Route index element={<HomePage />} />
-                    <Route path="video">
-                      <Route path=":id" element={<Video />} />
-                    </Route>
+              <Routes>
+                <Route path="/">
+                  <Route index element={<HomePage data={video} />} />
+                  <Route path="video">
+                    <Route path=":id" element={<Video data={video} />} />
                   </Route>
-                </Routes>
-              </MainSection>
+                </Route>
+              </Routes>
             </div>
           </div>
         </div>
