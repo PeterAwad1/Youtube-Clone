@@ -12,6 +12,7 @@ import {
   BrowserRouter,
   Routes,
 } from "react-router-dom";
+import Signin from "./components/pages/Signin";
 
 const video = [
   {
@@ -107,14 +108,15 @@ function App() {
           <div>
             <Navbar setOpenMenu={setOpenMenu} openMenu={openMenu} />
           </div>
-          <div className="flex w-full justify-between h-[calc(100vh-50px)] ">
-            <div className="bg-gray-900">
+          <div className="flex w-full justify-between h-[calc(100vh-50px)] overflow-y-scroll scrollbar-hide">
+            <div className="bg-black">
               <SideMenu open={openMenu} />
             </div>
             <div className="w-full p-5">
               <Routes>
                 <Route path="/">
                   <Route index element={<HomePage data={video} />} />
+                  <Route path="signin" element={<Signin />} />
                   <Route path="video">
                     <Route path=":id" element={<Video data={video} />} />
                   </Route>

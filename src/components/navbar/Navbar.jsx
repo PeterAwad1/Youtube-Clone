@@ -5,7 +5,7 @@ import { FaUserCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 function Navbar({ setOpenMenu, openMenu }) {
   return (
-    <div className="flex items-center w-full h-[50px] bg-gray-900 p-2 sm:px-4  justify-between">
+    <div className="flex items-center w-full h-[50px] bg-black p-2 sm:px-4  justify-between">
       {/* Log Section */}
       <div className="flex justify-between gap-5">
         {/* Menu Buttom */}
@@ -21,7 +21,9 @@ function Navbar({ setOpenMenu, openMenu }) {
             className="sm:w-7 sm:h-7 w-5 h-5"
             alt="YouTube Logo"
           />
-          <span className="text-white font-semibold">YouTube</span>
+          <span className="text-white text-xl font-semibold tracking-tighter">
+            YouTube
+          </span>
         </Link>
       </div>
       {/* Search Field */}
@@ -35,10 +37,13 @@ function Navbar({ setOpenMenu, openMenu }) {
         <IoIosSearch className="absolute right-4 top-1/2 transform -translate-y-1/2 h-3 w-5 sm:h-5 text-white cursor-pointer" />
       </form>
       {/* Sign In Button */}
-      <div className="flex gap-2 items-center justify-center border-[1px] border-blue-400 sm:rounded-md p-2 sm:p-4 rounded-full w-[30px] sm:w-[130px] h-5 sm:h-7 cursor-pointer hover:scale-105">
+      <Link
+        to="/signin"
+        className="flex gap-2 items-center justify-center border-[1px] border-blue-400  p-2 sm:p-4 rounded-full w-[30px] sm:w-[130px] h-5 sm:h-7 cursor-pointer hover:scale-105"
+      >
         <FaUserCircle className="text-blue-400 w-5 h-3 sm:h-5" />
         <p className="text-blue-400 font-simebold hidden sm:block">SIGN IN</p>
-      </div>
+      </Link>
     </div>
   );
 }
