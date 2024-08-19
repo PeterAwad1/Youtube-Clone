@@ -24,12 +24,12 @@ const MainMenu = [
   },
   {
     icon: <SiYoutubeshorts />,
-    path: "/",
-    name: "Videos",
+    path: "trends",
+    name: "Explore",
   },
   {
     icon: <MdSubscriptions />,
-    path: "/",
+    path: "Subscription",
     name: "Subscriptions",
   },
 ];
@@ -117,7 +117,7 @@ function SideMenu({ open }) {
           />
         ))}
         <Line />
-        <div className="flex flex-col items-start gap-2">
+        <div className="flex flex-col items-start gap-2 pl-4">
           <p className="text-white text-sm w-[200px]">
             Sign in to like videos, comment, and subscribe.
           </p>

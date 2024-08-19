@@ -21,7 +21,7 @@ function Signin() {
           />
           <Button>Sign in </Button>
         </div>
-        <Line className="hover:bg-black" />{" "}
+        <Line className="hover:bg-black" />
         <div className="flex flex-col w-[300px] sm:w-[500px] justify-center items-center gap-2">
           <p className="text-3xl font-semibold">Sign Up </p>
           <input

@@ -19,10 +19,10 @@ function Navbar({ setOpenMenu, openMenu }) {
             id="Logo"
             src={Img}
             className="sm:w-7 sm:h-7 w-5 h-5"
-            alt="YouTube Logo"
+            alt="PeteTube Logo"
           />
           <span className="text-white text-xl font-semibold tracking-tighter">
-            YouTube
+            PeteTube
           </span>
         </Link>
       </div>

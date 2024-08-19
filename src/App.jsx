@@ -16,90 +16,92 @@ import Signin from "./components/pages/Signin";
 
 const video = [
   {
-    thubmail: "./../../../public/thubmail.jpg",
+    thubmail: "/thubmail.jpg",
     time: "30:23",
     name: "London Is Most Amazing City ",
     channel: "Englend",
     views: "234k",
     history: "1 year ago",
-    channelImage: "./../../../public/ChannelImage.jpg",
+    channelImage: "/ChannelImage.jpg",
     subscription: "305K subscribers",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque deleniti reiciendis dignissimos corporis delectus temporibus obcaecati praesentium omnis. Fugit omnis rem deleniti esse harum dicta nisi exercitationem porro enim dolores!",
   },
   {
-    thubmail: "./../../../public/thubmail.jpg",
+    thubmail: "/thubmail.jpg",
     time: "30:23",
     name: "London Is Most Amazing City",
     channel: "Englend",
     views: "234k",
     history: "1 year ago",
-    channelImage: "./../../../public/ChannelImage.jpg",
+    channelImage: "/ChannelImage.jpg",
     subscription: "305K subscribers",
   },
   {
-    thubmail: "./../../../public/thubmail.jpg",
+    thubmail: "/thubmail.jpg",
+    time: "30:23",
+    name: "London Is Most Amazing City",
+    channel: "Englend",
+    channel: "Englend",
+    channel: "Englend",
+    views: "234k",
+    history: "1 year ago",
+    channelImage: "/ChannelImage.jpg",
+    subscribtion: "305K subscribers",
+  },
+  {
+    thubmail: "/thubmail.jpg",
     time: "30:23",
     name: "London Is Most Amazing City",
     channel: "Englend",
     views: "234k",
     history: "1 year ago",
-    channelImage: "./../../../public/ChannelImage.jpg",
+    channelImage: "/ChannelImage.jpg",
     subscribtion: "305K subscribers",
   },
   {
-    thubmail: "./../../../public/thubmail.jpg",
+    thubmail: "/thubmail.jpg",
     time: "30:23",
     name: "London Is Most Amazing City",
     channel: "Englend",
     views: "234k",
     history: "1 year ago",
-    channelImage: "./../../../public/ChannelImage.jpg",
+    channelImage: "/ChannelImage.jpg",
     subscribtion: "305K subscribers",
   },
   {
-    thubmail: "./../../../public/thubmail.jpg",
+    thubmail: "/thubmail.jpg",
     time: "30:23",
     name: "London Is Most Amazing City",
     channel: "Englend",
     views: "234k",
     history: "1 year ago",
-    channelImage: "./../../../public/ChannelImage.jpg",
+    channelImage: "/ChannelImage.jpg",
     subscribtion: "305K subscribers",
   },
   {
-    thubmail: "./../../../public/thubmail.jpg",
+    thubmail: "/thubmail.jpg",
     time: "30:23",
     name: "London Is Most Amazing City",
     channel: "Englend",
     views: "234k",
     history: "1 year ago",
-    channelImage: "./../../../public/ChannelImage.jpg",
+    channelImage: "/ChannelImage.jpg",
     subscribtion: "305K subscribers",
   },
   {
-    thubmail: "./../../../public/thubmail.jpg",
+    thubmail: "/thubmail.jpg",
     time: "30:23",
     name: "London Is Most Amazing City",
     channel: "Englend",
     views: "234k",
     history: "1 year ago",
-    channelImage: "./../../../public/ChannelImage.jpg",
-    subscribtion: "305K subscribers",
-  },
-  {
-    thubmail: "./../../../public/thubmail.jpg",
-    time: "30:23",
-    name: "Landan",
-    channel: "Englend",
-    views: "234k",
-    history: "1 year ago",
-    channelImage: "./../../../public/ChannelImage.jpg",
+    channelImage: "/ChannelImage.jpg",
     subscribtion: "305K subscribers",
   },
 ];
 function App() {
-  const [openMenu, setOpenMenu] = useState(true);
+  const [openMenu, setOpenMenu] = useState(false);
 
   return (
     <div className="bg-black">
@@ -115,7 +117,12 @@ function App() {
             <div className="w-full p-5">
               <Routes>
                 <Route path="/">
-                  <Route index element={<HomePage data={video} />} />
+                  <Route index element={<HomePage video={video} />} />
+                  <Route path="trends" element={<HomePage video={video} />} />
+                  <Route
+                    path="subscription"
+                    element={<HomePage video={video} />}
+                  />
                   <Route path="signin" element={<Signin />} />
                   <Route path="video">
                     <Route path=":id" element={<Video data={video} />} />

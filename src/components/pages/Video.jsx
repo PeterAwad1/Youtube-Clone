@@ -19,13 +19,14 @@ function Video({ data }) {
           <iframe
             width="100%"
             height="720"
-            src="https://www.youtube.com/embed/t8V-yXngvKw"
+            src="https://www.youtube.com/embed/fbEBXkn5JsU"
             title="Youtube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             className="rounded-xl w-full h-[250px] sm:h-[360px] md:h-[480px] lg:h-[540px] xl:h-[720px]"
           ></iframe>
+
           {/* this Section Descripe all data about video */}
           <div className="flex flex-col gap-2 text-white">
             {/* Name of video */}
@@ -55,33 +56,33 @@ function Video({ data }) {
                 </div>
               </div>
               <div className="flex justify-between gap-5 flex-wrap">
-                <div className="flex items-center gap-1 cursor-pointer ">
+                <div className="flex items-center gap-1  ">
                   <AiOutlineLike
-                    className="w-6 h-6 text-gray-400 hover:text-white focus:text-white active:scale-110 transition-colors duration-200 ease-in-out"
+                    className="w-6 h-6 text-gray-400 hover:text-white cursor-pointer focus:text-white active:scale-110 transition-colors duration-200 ease-in-out"
                     tabIndex="0"
                   />
                   <p className="text-gray-300 text-xs">192</p>
                 </div>
 
-                <div className="flex items-center gap-1 cursor-pointer">
+                <div className="flex items-center gap-1  ">
                   <AiOutlineDislike
-                    className="w-6 h-6 sm: text-gray-400 hover:text-white focus:text-white active:scale-110 transition-colors duration-200 ease-in-out"
+                    className="w-6 h-6 sm: text-gray-400 cursor-pointer hover:text-white focus:text-white active:scale-110 transition-colors duration-200 ease-in-out"
                     tabIndex="0"
                   />
                   <p className="text-gray-300 text-xs">Dislike</p>
                 </div>
 
-                <div className="flex items-center gap-1 cursor-pointer">
+                <div className="flex items-center gap-1 ">
                   <FaShare
-                    className="w-6 h-6 text-gray-400 hover:text-white focus:text-white active:scale-110 transition-colors duration-200 ease-in-out"
+                    className="w-6 h-6 text-gray-400 hover:text-white cursor-pointer focus:text-white active:scale-110 transition-colors duration-200 ease-in-out"
                     tabIndex="0"
                   />
                   <p className="text-gray-300 text-xs">Share</p>
                 </div>
 
-                <div className="flex items-center gap-1 cursor-pointer">
+                <div className="flex items-center gap-1 ">
                   <MdDataSaverOn
-                    className="w-6 h-6 text-gray-400 hover:text-white focus:text-white active:scale-110 transition-colors duration-200 ease-in-out"
+                    className="w-6 h-6 text-gray-400 hover:text-white cursor-pointer focus:text-white active:scale-110 transition-colors duration-200 ease-in-out"
                     tabIndex="0"
                   />
                   <p className="text-gray-300 text-xs">Save</p>

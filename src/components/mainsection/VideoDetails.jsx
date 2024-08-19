@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import { format } from "timeago.js";
 function VideoDetails({ data }) {
   return (
     <div className="flex flex-col items-start text-white gap-2 ">
@@ -15,8 +15,6 @@ function VideoDetails({ data }) {
         </Link>
       </div>
       <div className="flex justify-between items-start gap-2">
-        {" "}
-        {/* Reduced the gap */}
         <div>
           <img
             src={data.channelImage}
